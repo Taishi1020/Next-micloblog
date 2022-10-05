@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "./layout.module.css"
-import utils from  "../styles/utils.module.css"
+import utils from "../styles/utils.module.css"
 
 
 function Layout({children}) {
@@ -12,7 +12,7 @@ function Layout({children}) {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <header className={styles.header}>
-                <img src="/images/profile.png" alt="" className={utils.borderCircle} />
+                <img src="/images/profile.png" alt="" className={utils.borderCircle}/>
                 <h1>{name}</h1>
             </header>
             <main className={utils.heading2Xl}>{children}</main>
