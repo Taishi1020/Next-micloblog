@@ -1,3 +1,5 @@
+/*layout画面の骨格用　layoutのみに適用させるcss*/
+
 .container {
     max-width: 1244px;
     padding: 0 1rem;

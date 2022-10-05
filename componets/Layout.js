@@ -15,7 +15,7 @@ function Layout({children}) {
                 <img src="/images/profile.png" alt="" className={utils.borderCircle} />
                 <h1>{name}</h1>
             </header>
-            <main>{children}</main>
+            <main className={utils.heading2Xl}>{children}</main>
         </div>
     );
 }
