@@ -3,11 +3,12 @@ import Link from "next/link";
 import utilStyle from "../styles/utils.module.css"
 import styles from "../styles/Home.module.css"
 
-/*import関連*/
-
-/*状態管理関連*/
-
 export default function Home() {
+
+    /*import関連*/
+
+    /*状態管理関連*/
+
     return (
         <>
             <Layout>
