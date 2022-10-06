@@ -2,14 +2,12 @@ import Layout from "../componets/Layout";
 import Link from "next/link";
 import utilStyle from "../styles/utils.module.css"
 import styles from "../styles/Home.module.css"
-import {getPostData} from '../lidev/post'
-
+import {getPostsData} from '../lidev/post'
 
 //SSGの場合
 export async function getStaticProps() {
-    const allPostData = getPostData();
+    const allPostData = getPostsData();
     console.log(allPostData)
-
     return {
         props: {
             allPostData,
