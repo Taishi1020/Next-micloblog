@@ -2,9 +2,23 @@ import Layout from "../componets/Layout";
 import Link from "next/link";
 import utilStyle from "../styles/utils.module.css"
 import styles from "../styles/Home.module.css"
+import {getPostData} from '../lidev/post'
 
-export default function Home() {
 
+
+//SSGの場合
+export async function getStaticProps() {
+    const allPostData = getPostData();
+    console.log(allPostData)
+
+    return {
+        props: {
+            allPostData,
+        },
+    };
+}
+
+export default function Home({allPostsData}) {
     /*import関連*/
 
     /*状態管理関連*/
